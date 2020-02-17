@@ -1,0 +1,182 @@
+body,html{
+   width: 100%;
+   height: 100%;
+}
+#header{
+   height: 60px;
+   width: 100%;
+   background-color: white;
+   box-shadow:0 3px 10px rgba(0,0,0,0.4);
+   position: fixed;
+   z-index: 900000;
+}
+.logo{
+   line-height: 60px;
+   float: left;
+   margin-left: 20px;
+}
+.userId div{
+   float: left;
+   margin-right:45px;
+   line-height: 60px;
+   font-size: 0.95rem;
+}
+.userId{
+   float: right;
+}
+.username{
+   color: #f15a22;
+}
+.logout:hover{
+   color: #f15a22;
+}
+
+#aside{
+   width: 250px;
+   height: 100%;
+   overflow: hidden;
+   padding-top: 85px;
+   background-color: white;
+   top: 0;
+   left: 0;
+   position: fixed;
+   z-index:899999;
+}
+#aside li{
+   margin-bottom: 30px;
+   margin-left: 20px;
+   font-size: 1rem;
+}
+#aside li:hover{
+   color: #f23e27;
+}
+#aside li img{
+   margin-right: 15px;
+}
+.container{
+   width: Calc(100% - 250px);
+   height: 100%;
+   position: absolute;
+   left: 250px;
+   top: 60px;
+}
+section{
+   width: 80%;
+   height: auto;
+   background-color: white;
+   padding: 20px;
+   margin-left: 2%;
+   margin-top: 20px;
+   float: left;
+}
+.title{
+   text-align: center;
+   font-size: 1rem;
+}
+.percent{
+   color:  #f23e27;
+}
+.transactionBox{
+   width: 96%;
+   height: auto;
+   border: 1px solid #878787;
+   margin : 10px auto;
+}
+.pointSection{
+	width:1410px;
+	overflowX:scroll;
+}
+.transactionBox input{
+   border: 0;
+   padding : 5px 7px;
+   width : 30%;
+   text-align : center;
+   margin-right : 0;
+}
+.transactionBox .pointH{
+	border : 0;
+   ppadding : 5px;
+   width: 20%;
+   margin-right : 0;
+}
+.transactionBox .pointH1{
+   border : 0;
+   ppadding : 5px;
+   width: 20%;
+   margin-right : 0;
+}
+.transaction .pointH2{
+   border : 0;
+   padding : 5px;
+   width : 3%   ;
+   margin-right : 0;
+}
+.transaction .pointH3{
+   border : 0;
+   padding : 5px;
+   width : 35%;
+   margin-right : 0;
+}
+.transaction .pointH4{
+   border : 0;
+   padding : 5px;
+   width: 10%;
+   margin-right : 0;
+}
+button{
+   padding: 4px 20px;
+   background-color: #f23e27;
+   color: white;
+   border-radius: 10px;
+   border: none;
+   font-size: 1rem;
+   font-weight: 1000;
+   margin-top: 10px;
+   cursor: pointer;
+   float: right;
+}
+#lnb_btn{
+	display:none;
+}
+#lnb_chk{
+	display:none;
+}
+@media all and (max-width:1085px){
+	section{
+		width:750px;
+		overflow:scroll;
+	}
+}
+@media all and (max-width : 750px){
+	.container{
+		width:100%;
+		left:0;
+	}
+	section{
+		width:700px;
+		margin-left:5%;
+		margin-top:20px;
+		overflowX:scroll;
+	}
+	.userId{
+		display: none;
+	}
+	#lnb_btn{
+		display:block;
+		float:right;
+		line-height:60px;
+		margin-right:45px;
+		cursor:pointer;
+	}
+	#aside{
+		display:none;
+		background-color:rgba(255,255,255,0.9);
+	}
+	.transactionBox{
+		overflow:scroll;
+	}
+	.transactionBox input{
+		width:180px;
+		overflow:scroll;
+	}
+}
